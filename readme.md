@@ -19,7 +19,7 @@ Import the duplicator.js plugin and create a new `instance` of Duplicator, attac
 
 When used like this, the plugin will:
 
-Find a element with `id="œmy-duplicate-element"` and duplicate it to the next sibling of the trigger. If there's no sibling, a div with the class `duplicator-duplicates` will be created on init.
+Find a element with id `my-duplicate-element` and duplicate it to the next sibling of the trigger. If there's no sibling, a div with the class `duplicator-duplicates` will be created on init.
 
 ## All options in the data attributes
 
@@ -49,6 +49,6 @@ The element where the duplicates will be appended to
 - **data**
 The object containing the JSON data from the `trigger`
 - **maxDuplicates**
-The amount of duplicates that is allowed. If `false`, thereâ€™s no limit
+The amount of duplicates that is allowed. If `false`, there's no limit (no no)
 - **trigger**
 The element that has `data-duplicator` and that will be clicked to duplicate
