@@ -4,7 +4,9 @@ This plugin adds the functionality to duplicate elements to a specific `target`.
 
 ## Usage
 
-Include the duplicator.js plugin (included in Bruut 3.x) and create a new `instance` of Duplicator, attaching it to a element with `data-duplicate`:
+Import the duplicator.js plugin and create a new `instance` of Duplicator, attaching it to a element with `data-duplicate`:
+
+	import {Duplicator} from 'bruut-duplicator';
 
 	document.addEventListener("DOMContentLoaded", function () {
 	    var duplicateTrigger = document.getElementById('my-duplicator');
@@ -17,7 +19,7 @@ Include the duplicator.js plugin (included in Bruut 3.x) and create a new `insta
 
 When used like this, the plugin will:
 
-Find a element with `id=â€œmy-duplicate-elementâ€` and duplicate it to the next sibling of the trigger. If thereâ€™s no sibling, a div with the class `duplicator-duplicates` will be created on init.
+Find a element with `id="œmy-duplicate-element"` and duplicate it to the next sibling of the trigger. If there's no sibling, a div with the class `duplicator-duplicates` will be created on init.
 
 ## All options in the data attributes
 
@@ -26,7 +28,7 @@ Find a element with `id=â€œmy-duplicate-elementâ€` and duplicate it to 
 > Please note: You must provide a valid JSON encoded string to get the plugin to work. If the plugin fails to process the string, it will throw a error in the console.
 
 - **id** | Required
-The id of the element that needs to be duplicated. Please note: the â€˜idâ€™ attribute will be removed from the duplicated element.
+The id of the element that needs to be duplicated. Please note: the `id` attribute will be removed from the duplicated element.
 - **target** | Optional (default: sibling of element)
 The id of the element where the duplicates will be appended to. If not provided, the plugin will find the sibling of the trigger. If a sibling does not exist, a div with the class `duplicator-duplicates` will be created.
 - **max** | Optional (default: false)
